@@ -4,9 +4,9 @@
     <!-- File version numbers -->
     <MajorVersion>10</MajorVersion>
     <MinorVersion>0</MinorVersion>
-    <PatchVersion>4</PatchVersion>
+    <PatchVersion>2</PatchVersion>
     <!-- The .NET product branding version -->
-    <ProductVersion>$(MajorVersion).$(MinorVersion).$(PatchVersion)</ProductVersion>
+    <ProductVersion>10.0.2</ProductVersion>
     <PackageVersionNet9>9.0.$([MSBuild]::Add($(PatchVersion),12))</PackageVersionNet9>
     <PackageVersionNet8>8.0.$([MSBuild]::Add($([System.Version]::Parse('$(PackageVersionNet9)').Build),11))</PackageVersionNet8>
     <PackageVersionNet7>7.0.20</PackageVersionNet7>

@@ -17,7 +17,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          tdnf install -y openssl-devel zlib-devel
+          tdnf install -y openssl-devel libicu-devel zlib-devel
 
       - name: Build
         run: ./build.sh -c Release -arch x64 /p:DotNetBuildAllRuntimePacks=true /p:DotNetFinalVersionKind=release
@@ -40,7 +40,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          tdnf install -y openssl-devel zlib-devel
+          tdnf install -y openssl-devel libicu-devel zlib-devel
 
       - name: Build
         run: ./build.sh -c Release -arch arm64 /p:DotNetBuildAllRuntimePacks=true /p:DotNetFinalVersionKind=release
@@ -63,7 +63,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          tdnf install -y openssl-devel
+          tdnf install -y openssl-devel libicu-devel
 
       - name: Build
         run: ./build.sh -c Release -arch x64 /p:DotNetBuildAllRuntimePacks=true /p:DotNetFinalVersionKind=release
@@ -86,7 +86,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          tdnf install -y openssl-devel
+          tdnf install -y openssl-devel libicu-devel
 
       - name: Build
         run: ./build.sh -c Release -arch arm64 /p:DotNetBuildAllRuntimePacks=true /p:DotNetFinalVersionKind=release
